@@ -9,9 +9,14 @@ export class AppComponent {
   title = "HolaMundo";
   toogle = true;
   listEstudiantes: any[] = [
-    { nombre: "Cisne Cabrera", estado: 'No Aprobado' },
+    { nombre: "Lucas Rodriguez", estado: 'No Aprobado' },
     { nombre: "Maria Armijos", estado: 'Aprobado' },
     { nombre: "Martin Perez", estado:  'No Aprobado' },
+    { nombre: "Carlos Gomez", estado:  'Promocionado' },
+    { nombre: "Juan Garcia", estado:  'No Aprobado' },
   ];
 
+  btnToogle(): void {
+    this.toogle = !this.toogle;
+  }
 }
